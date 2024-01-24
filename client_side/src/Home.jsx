@@ -15,7 +15,7 @@ function Home() {
       setErrorMessage(null);
 
       // Send a GET request to the API with the URL
-      const response = await axios.get(`http://localhost:3000/crawlers/index?url=${encodeURIComponent(url)}`);
+      const response = await axios.get(`http://api.grootcart.tech/crawlers/index?url=${encodeURIComponent(url)}`);
 
       if (response.data.success) {
         const crawledPages = response.data.crawled_pages;
